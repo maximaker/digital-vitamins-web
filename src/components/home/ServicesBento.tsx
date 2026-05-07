@@ -95,8 +95,8 @@ export function ServicesBento() {
               <div className="h-[60%] w-px bg-border absolute left-1/2 -translate-x-1/2 transition-transform duration-700 ease-out group-hover:scale-y-125"></div>
               <div className="w-4 h-4 bg-primary/20 absolute rounded-none transition-all duration-500 ease-out group-hover:bg-primary/40 group-hover:scale-150 group-hover:rotate-45"></div>
               
-              {/* Scanner line effect on hover */}
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-primary/50 -translate-y-[10px] opacity-0 group-hover:opacity-100 group-hover:animate-[scan_2s_ease-in-out_infinite]"></div>
+              {/* Soft gradient pulse on hover replacing the gamer scanner */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
             </div>
             
             <h3 className="text-[20px] font-normal mb-[16px] text-text-primary tracking-[-0.02em] relative z-10">

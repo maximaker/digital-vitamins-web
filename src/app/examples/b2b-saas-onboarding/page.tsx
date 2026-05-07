@@ -78,6 +78,30 @@ export default function CaseStudyPage() {
               Users rarely complain about friction; they just leave. Every mandatory step before the "aha" moment is a potential exit point.
             </blockquote>
 
+            {/* Before Visual Evidence Placeholder */}
+            <div className="my-12 w-full bg-surface border border-border p-8 flex flex-col gap-6">
+              <div className="flex items-center gap-4 border-b border-border/50 pb-4">
+                <div className="w-2 h-2 bg-text-secondary"></div>
+                <span className="zenith-micro text-text-secondary">BEFORE: THE FRICTION POINT</span>
+              </div>
+              <div className="w-full aspect-[16/9] bg-background border border-border/30 relative flex flex-col items-center justify-center p-8 text-center">
+                <div className="w-16 h-16 rounded-md bg-border/50 mb-6 flex items-center justify-center">
+                  <div className="w-8 h-8 border-[3px] border-text-secondary/30 rounded-full border-t-text-secondary/80"></div>
+                </div>
+                <div className="w-48 h-4 bg-text-primary/20 mb-4"></div>
+                <div className="w-64 h-3 bg-border/80 mb-8"></div>
+                <div className="w-full max-w-sm h-12 bg-border/30 mb-4 flex items-center px-4"><div className="w-24 h-2 bg-border/80"></div></div>
+                <div className="w-full max-w-sm h-12 bg-border/30 mb-8 flex items-center px-4"><div className="w-32 h-2 bg-border/80"></div></div>
+                <div className="w-full max-w-sm h-12 bg-primary/20 flex items-center justify-center"><div className="w-16 h-2 bg-primary/60"></div></div>
+                
+                {/* Annotation */}
+                <div className="absolute -right-4 top-1/2 translate-x-full -translate-y-1/2 max-w-[200px] hidden xl:block">
+                  <div className="text-[14px] text-primary font-medium mb-1">API Key Wall</div>
+                  <div className="text-[13px] text-text-secondary leading-tight">Asking for technical credentials before the user has seen the dashboard caused a 40% drop-off.</div>
+                </div>
+              </div>
+            </div>
+
             <h2>The Diagnosis & Change</h2>
             <p>
               We realized we were demanding high effort before providing any value. We needed to invert the relationship.
@@ -94,6 +118,41 @@ export default function CaseStudyPage() {
             <p>
               Now, users could instantly see what the dashboard looked like, interact with charts, and understand the value. The prompt to "Connect Your Real Data" was moved to a contextual banner inside the dashboard, triggered only when they tried to perform a real action or after they had spent a few minutes exploring.
             </p>
+
+            {/* After Visual Evidence Placeholder */}
+            <div className="my-12 w-full bg-surface border border-border p-8 flex flex-col gap-6">
+              <div className="flex items-center gap-4 border-b border-border/50 pb-4">
+                <div className="w-2 h-2 bg-primary"></div>
+                <span className="zenith-micro text-primary">AFTER: CONTEXTUAL CONNECTION</span>
+              </div>
+              <div className="w-full aspect-[16/9] bg-background border border-border/30 relative flex overflow-hidden">
+                {/* Sidebar mock */}
+                <div className="w-1/4 h-full border-r border-border/30 p-4 flex flex-col gap-4">
+                  <div className="w-1/2 h-3 bg-border/50 mb-4"></div>
+                  <div className="w-3/4 h-2 bg-border/30"></div>
+                  <div className="w-full h-2 bg-border/30"></div>
+                  <div className="w-2/3 h-2 bg-border/30"></div>
+                </div>
+                {/* Main area mock */}
+                <div className="flex-1 p-6 flex flex-col gap-6 relative">
+                  {/* Contextual Banner */}
+                  <div className="w-full h-12 bg-primary/10 border border-primary/20 flex items-center justify-between px-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-4 h-4 bg-primary/40 rounded-sm"></div>
+                      <div className="w-48 h-2 bg-primary/40"></div>
+                    </div>
+                    <div className="w-24 h-6 bg-primary/80 rounded-sm"></div>
+                  </div>
+                  {/* Dashboard Grid mock */}
+                  <div className="flex gap-4">
+                    <div className="flex-1 h-32 bg-surface border border-border/50"></div>
+                    <div className="flex-1 h-32 bg-surface border border-border/50"></div>
+                    <div className="flex-1 h-32 bg-surface border border-border/50"></div>
+                  </div>
+                  <div className="w-full flex-1 bg-surface border border-border/50"></div>
+                </div>
+              </div>
+            </div>
 
             <h2>The Impact</h2>
             <p>

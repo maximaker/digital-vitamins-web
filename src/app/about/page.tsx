@@ -38,16 +38,36 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-background p-12 border border-border shadow-sm">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-4 h-4 bg-text-primary rounded-none"></div>
-              <span className="zenith-micro">THE EXPERIENCE</span>
-            </div>
-            <h2 className="text-[32px] md:text-[40px] font-normal tracking-[-0.02em] mb-[32px] text-text-primary">
-              Over 20 years of product design experience.
-            </h2>
-            <div className="space-y-[24px] text-[16px] text-text-secondary font-light leading-[1.8]">
-              <p>Digital Vitamins is led by Max, a product and UX designer with over two decades of experience designing digital products, websites, flows, and service experiences.</p>
-              <p>The approach is direct: Listen to the business goals, observe the user friction, separate the symptoms from the root causes, and prescribe practical, design-led improvements.</p>
+            <div className="flex flex-col md:flex-row gap-12">
+              <div className="w-full md:w-1/3 flex flex-col gap-6 shrink-0">
+                {/* Founder Portrait Placeholder */}
+                <div className="w-full aspect-[3/4] bg-surface border border-border flex items-center justify-center relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[#705849]/10 to-transparent"></div>
+                  <span className="zenith-micro text-text-secondary group-hover:text-primary transition-colors">PORTRAIT PLACEHOLDER</span>
+                </div>
+                <div>
+                  <h3 className="text-[18px] text-text-primary mb-1">Max</h3>
+                  <p className="text-[14px] text-text-secondary font-light mb-4">Founder, Digital Vitamins</p>
+                  <a href="https://linkedin.com/in/maximaker" target="_blank" rel="noopener noreferrer" className="zenith-micro hover:text-primary transition-colors inline-flex items-center gap-2">
+                    LINKEDIN PROFILE <ArrowRight />
+                  </a>
+                </div>
+              </div>
+              
+              <div className="w-full md:w-2/3">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-4 h-4 bg-text-primary rounded-none"></div>
+                  <span className="zenith-micro">THE EXPERIENCE</span>
+                </div>
+                <h2 className="text-[32px] md:text-[40px] font-normal tracking-[-0.02em] mb-[32px] text-text-primary">
+                  Over 20 years of product design experience.
+                </h2>
+                <div className="space-y-[24px] text-[16px] text-text-secondary font-light leading-[1.8]">
+                  <p>Digital Vitamins is led by Max, a product and UX designer with over two decades of experience designing digital products, websites, flows, and service experiences.</p>
+                  <p>The approach is direct: Listen to the business goals, observe the user friction, separate the symptoms from the root causes, and prescribe practical, design-led improvements.</p>
+                  <p>I work best when a product already has some shape, but the experience does not yet feel as clear, useful, or trustworthy as it could. I like looking closely at the moments where users hesitate, get lost, misread something, or need extra help. Often, those moments reveal what the product really needs next.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

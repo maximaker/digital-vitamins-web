@@ -131,6 +131,17 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+      
+      {/* Client Roster / Social Proof */}
+      <div className="w-full border-t border-border bg-surface px-6 py-8 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 lg:px-[100px] z-10 relative">
+        <span className="zenith-micro text-text-secondary/70 tracking-widest whitespace-nowrap">TRUSTED BY TEAMS AT</span>
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale contrast-100">
+          <div className="text-[18px] font-bold tracking-tighter uppercase text-text-primary">HORIZON DATA</div>
+          <div className="text-[18px] font-serif italic text-text-primary">ACME CORP</div>
+          <div className="text-[18px] font-medium tracking-tight text-text-primary">ZENITH <span className="font-light">SaaS</span></div>
+          <div className="text-[18px] font-bold text-text-primary flex items-center gap-1"><div className="w-3 h-3 bg-text-primary rounded-sm"></div> NEURAL</div>
+        </div>
+      </div>
     </section>
   );
 }

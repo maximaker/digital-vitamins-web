@@ -47,15 +47,35 @@ export default function UXHealthCheckPage() {
                 <li className="flex gap-3"><span className="text-primary">→</span> Microcopy, labels, and user effort</li>
               </ul>
             </div>
-            <div className="bg-background p-10 border border-border shadow-sm">
-              <h3 className="zenith-micro mb-8 text-primary">WHAT YOU RECEIVE</h3>
-              <ul className="space-y-4 text-[16px] text-text-secondary font-light">
-                <li className="flex gap-3"><span className="text-text-primary">✓</span> Clear list of UX issues with priority</li>
-                <li className="flex gap-3"><span className="text-text-primary">✓</span> Explanation of why each issue matters</li>
-                <li className="flex gap-3"><span className="text-text-primary">✓</span> Suggested quick wins & deeper fixes</li>
-                <li className="flex gap-3"><span className="text-text-primary">✓</span> Annotated screenshots</li>
-                <li className="flex gap-3"><span className="text-text-primary">✓</span> Optional walkthrough call</li>
-              </ul>
+            <div className="bg-background p-10 border border-border shadow-sm flex flex-col justify-between">
+              <div>
+                <h3 className="zenith-micro mb-8 text-primary">WHAT YOU RECEIVE</h3>
+                <ul className="space-y-4 text-[16px] text-text-secondary font-light mb-12">
+                  <li className="flex gap-3"><span className="text-text-primary">✓</span> Clear list of UX issues with priority</li>
+                  <li className="flex gap-3"><span className="text-text-primary">✓</span> Explanation of why each issue matters</li>
+                  <li className="flex gap-3"><span className="text-text-primary">✓</span> Suggested quick wins & deeper fixes</li>
+                  <li className="flex gap-3"><span className="text-text-primary">✓</span> Annotated screenshots</li>
+                  <li className="flex gap-3"><span className="text-text-primary">✓</span> Optional walkthrough call</li>
+                </ul>
+              </div>
+              
+              {/* Artifact Preview */}
+              <div className="w-full bg-surface border border-border p-6 mt-auto">
+                <div className="flex items-center justify-between border-b border-border/50 pb-4 mb-4">
+                  <div className="zenith-micro text-text-secondary">DIAGNOSTIC_REPORT.PDF</div>
+                  <div className="w-2 h-2 rounded-full bg-primary/80"></div>
+                </div>
+                <div className="space-y-3">
+                  <div className="w-3/4 h-3 bg-text-primary/10"></div>
+                  <div className="w-full h-2 bg-border/50"></div>
+                  <div className="w-5/6 h-2 bg-border/50"></div>
+                  <div className="w-full aspect-[21/9] bg-background border border-border/50 mt-4 relative overflow-hidden flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.02)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px]"></div>
+                    <div className="w-12 h-8 border-2 border-primary/40 absolute top-4 left-4"></div>
+                    <div className="w-1 h-12 bg-primary/40 absolute top-2 left-2"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
