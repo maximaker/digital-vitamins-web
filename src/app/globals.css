@@ -1,26 +1,235 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Refined Zenith Light Mode Theme - High Contrast Warm + Orange */
+  
+  --color-background: #F4EBE6; /* Keep the warm paper-like beige */
+  --color-surface: #FFFFFF; /* Pure white surface for maximum contrast against the beige */
+  
+  /* The primary accent is restored to the punchy Zenith Orange */
+  --color-primary: #EA580C; 
+  --color-primary-hover: #C24100;
+  
+  /* Text is pushed to near-black (deep espresso) for sharp contrast */
+  --color-text-primary: #181412; 
+  --color-text-secondary: #5A4E46; /* Stronger mid-tone for readability */
+  --color-text-inverse: #FFFFFF;
+  
+  /* Borders are sharper and darker */
+  --color-border: rgba(24, 20, 18, 0.15);
+  
+  /* Buttons use the high-contrast dark color */
+  --color-neutral: #181412; 
+  
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Zenith Components */
+.zenith-surface {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  border-radius: 0px;
+}
+
+.zenith-border {
+  border: 1px solid var(--color-border);
+}
+
+.zenith-border-b {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.zenith-border-t {
+  border-top: 1px solid var(--color-border);
+}
+
+/* Elegant microcopy */
+.zenith-micro {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Base button - sophisticated */
+.zenith-btn {
+  background-color: var(--color-neutral);
+  color: var(--color-text-inverse);
+  padding: 16px 32px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.zenith-btn:hover {
+  background-color: var(--color-primary); /* Buttons flash orange on hover */
+  transform: translateY(-1px);
+}
+
+.zenith-btn-outline {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  padding: 16px 32px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.zenith-btn-outline:hover {
+  background-color: var(--color-surface);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes scan {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(200px); opacity: 0; }
+}
+
+/* Zenith Editorial Prose */
+.zenith-prose {
+  max-width: 65ch;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.zenith-prose p {
+  margin-bottom: 2em;
+}
+
+.zenith-prose h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.zenith-prose h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+.zenith-prose ul {
+  margin-bottom: 2em;
+  list-style: none;
+  padding: 0;
+}
+
+.zenith-prose li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.8em;
+}
+
+.zenith-prose li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.zenith-prose li:hover::before {
+  opacity: 1;
+}
+
+.zenith-prose strong {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.zenith-prose a {
+  color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.zenith-prose a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.zenith-prose a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.zenith-prose blockquote {
+  margin: 3em 0;
+  padding: 1.5em 2em;
+  border-left: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  font-size: 22px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  font-style: italic;
+  position: relative;
+}
+
+.zenith-prose blockquote::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 0;
+  width: 1px;
+  background-color: var(--color-primary);
+  transition: height 0.5s ease;
+}
+
+.zenith-prose blockquote:hover::before {
+  height: 100%;
 }
