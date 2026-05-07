@@ -24,6 +24,7 @@ export function Footer() {
               <li><Link href="/services/ux-health-check" className="text-[14px] text-white/80 hover:text-white transition-colors font-light">UX Health Check</Link></li>
               <li><Link href="/services/flow-fix" className="text-[14px] text-white/80 hover:text-white transition-colors font-light">Flow Fix</Link></li>
               <li><Link href="/services/prototyping" className="text-[14px] text-white/80 hover:text-white transition-colors font-light">Prototyping</Link></li>
+              <li><Link href="/services/landing-page-improvement" className="text-[14px] text-white/80 hover:text-white transition-colors font-light flex items-center gap-2">Landing Page <span className="text-[9px] px-1.5 py-0.5 border border-white/20 bg-white/5 opacity-80">SOON</span></Link></li>
             </ul>
           </div>
 

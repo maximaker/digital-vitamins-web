@@ -39,7 +39,7 @@ const symptoms: Symptom[] = [
     label: "Our page doesn't explain the offer well, and we aren't converting.",
     serviceId: "landing-page",
     recommendation: "This requires Landing Page Improvement (Currently in development). You can join the waitlist or book a checkup to discuss.",
-    link: "/contact"
+    link: "/services/landing-page-improvement"
   }
 ];
 
