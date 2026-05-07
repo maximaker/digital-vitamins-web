@@ -142,9 +142,9 @@ export default function ServicesPage() {
                 <p className="text-[16px] text-text-secondary leading-[1.6] font-light mb-[40px] max-w-[600px]">
                   Restructure messaging and flow to increase clarity and conversion. Launching after the core product services are grounded.
                 </p>
-                <button className="zenith-btn opacity-50 cursor-not-allowed">
-                  JOIN WAITLIST
-                </button>
+                <Link href="/services/landing-page-improvement" className="zenith-btn">
+                  VIEW DETAILS <ArrowRight weight="bold" />
+                </Link>
               </div>
               <div className="md:col-span-4 bg-background p-10 border border-border flex flex-col gap-8">
                 <div>

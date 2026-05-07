@@ -32,7 +32,7 @@ const services = [
     title: "Landing Page Improvement",
     description: "Restructure messaging and flow to increase clarity and conversion.",
     href: "/services/landing-page-improvement",
-    status: "Coming Soon"
+    status: "COMING SOON"
   }
 ];
 
@@ -85,7 +85,8 @@ export function ServicesBento() {
             
             <div className="w-full aspect-[4/3] bg-background mb-8 relative flex items-center justify-center overflow-hidden border border-border/50">
               {service.status && (
-                <div className="absolute top-4 left-4 bg-surface px-2 py-1 zenith-micro border border-border z-10 shadow-sm">
+                <div className="absolute top-4 left-4 bg-surface px-3 py-1 zenith-micro border border-border z-10 shadow-sm flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary/80 rounded-full animate-pulse"></div>
                   {service.status}
                 </div>
               )}
@@ -108,20 +109,16 @@ export function ServicesBento() {
             </p>
             
             <div className="mt-auto pt-6 border-t border-border relative z-10 overflow-hidden">
-              {service.status ? (
-                <span className="zenith-micro text-text-secondary">JOIN WAITLIST</span>
-              ) : (
-                <Link 
-                  href={service.href} 
-                  className="zenith-micro hover:text-primary transition-colors flex items-center gap-2 relative inline-flex"
-                >
-                  <span className="relative">
-                    VIEW DETAILS
-                    <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full"></span>
-                  </span>
-                  <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
-              )}
+              <Link 
+                href={service.href} 
+                className="zenith-micro hover:text-primary transition-colors flex items-center gap-2 relative inline-flex group/link"
+              >
+                <span className="relative">
+                  {service.status ? "JOIN WAITLIST" : "VIEW DETAILS"}
+                  <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover/link:w-full"></span>
+                </span>
+                <ArrowRight className="transform transition-transform duration-300 group-hover/link:translate-x-1" />
+              </Link>
             </div>
           </div>
         ))}

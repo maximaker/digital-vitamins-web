@@ -12,14 +12,18 @@ export default function LandingPageImprovementPage() {
           </Link>
         </div>
         <div className="max-w-[800px]">
+          <div className="inline-flex items-center gap-2 bg-surface border border-border px-3 py-1 mb-8">
+            <div className="w-2 h-2 bg-primary/80 rounded-full animate-pulse"></div>
+            <span className="zenith-micro text-text-secondary">COMING SOON</span>
+          </div>
           <h1 className="text-[42px] sm:text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
             Make your landing page easier to understand, trust, and act on.
           </h1>
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px] mb-12">
             A practical improvement of your landing page structure, messaging, and flow so visitors understand the offer and know what to do next.
           </p>
-          <Link href="/contact" className="zenith-btn">
-            IMPROVE YOUR PAGE <ArrowRight weight="bold" />
+          <Link href="/contact?service=landing-page-waitlist" className="zenith-btn">
+            JOIN THE INTEREST LIST <ArrowRight weight="bold" />
           </Link>
         </div>
       </section>
@@ -71,13 +75,13 @@ export default function LandingPageImprovementPage() {
       <section className="w-full relative overflow-hidden text-white py-[140px] text-center">
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#8C7362] to-[#705849]"></div>
         <div className="relative z-10 px-6 lg:px-[100px] max-w-[800px] mx-auto">
-          <h2 className="text-[36px] md:text-[48px] font-light tracking-[-0.03em] mb-[24px] leading-[1.1]">Ready to clarify your offer?</h2>
+          <h2 className="text-[36px] md:text-[48px] font-light tracking-[-0.03em] mb-[24px] leading-[1.1]">Be the first to know.</h2>
           <p className="text-[18px] text-white/90 mb-[48px] leading-[1.6] font-light max-w-[600px] mx-auto">
-            Send a few details about your landing page and let's make it convert.
+            This service will launch soon. Join the interest list to secure early access and special launch pricing.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact" className="bg-white text-[#5C4538] hover:bg-white/90 transition-colors px-8 py-4 text-[13px] font-medium tracking-widest uppercase flex items-center gap-3">
-              IMPROVE YOUR PAGE <ArrowRight weight="bold" />
+            <Link href="/contact?service=landing-page-waitlist" className="bg-white text-[#5C4538] hover:bg-white/90 transition-colors px-8 py-4 text-[13px] font-medium tracking-widest uppercase flex items-center gap-3">
+              JOIN THE INTEREST LIST <ArrowRight weight="bold" />
             </Link>
           </div>
         </div>
