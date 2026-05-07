@@ -12,7 +12,7 @@ export default function FlowFixPage() {
           </Link>
         </div>
         <div className="max-w-[800px]">
-          <h1 className="text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
+          <h1 className="text-[42px] sm:text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
             Fix the moments where users hesitate, drop off, or get confused.
           </h1>
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px] mb-12">

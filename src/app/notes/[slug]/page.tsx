@@ -30,7 +30,7 @@ export default async function NotePage({ params }: { params: Promise<{ slug: str
         </div>
         <div className="max-w-[800px]">
           <p className="zenith-micro text-text-secondary mb-6">NOTE / ARTICLE</p>
-          <h1 className="text-[48px] md:text-[72px] font-normal tracking-[-0.04em] text-text-primary leading-[1.05] mb-[32px]">
+          <h1 className="text-[42px] sm:text-[56px] md:text-[72px] font-normal tracking-[-0.04em] text-text-primary leading-[1.05] mb-[32px]">
             {note.metadata.title}
           </h1>
         </div>

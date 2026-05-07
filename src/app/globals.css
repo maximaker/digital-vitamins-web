@@ -123,7 +123,13 @@
   color: var(--color-text-secondary);
   font-weight: 300;
   line-height: 1.8;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .zenith-prose {
+    font-size: 18px;
+  }
 }
 
 .zenith-prose p {

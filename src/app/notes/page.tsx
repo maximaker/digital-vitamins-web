@@ -7,13 +7,13 @@ export default function NotesPage() {
 
   return (
     <div className="flex flex-col">
-      <section className="w-full zenith-border-b bg-background px-6 lg:px-[100px] pt-[120px] pb-[80px]">
+      <section className="w-full zenith-border-b bg-background px-6 lg:px-[100px] pt-[80px] md:pt-[120px] pb-[60px] md:pb-[80px]">
         <div className="flex items-center gap-4 mb-16">
           <div className="w-6 h-px bg-primary"></div>
           <span className="zenith-micro tracking-widest">NOTES</span>
         </div>
         <div className="max-w-[800px]">
-          <h1 className="text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
+          <h1 className="text-[42px] sm:text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
             Thoughts on friction.
           </h1>
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px]">
@@ -22,7 +22,7 @@ export default function NotesPage() {
         </div>
       </section>
 
-      <section className="w-full zenith-border-b bg-surface px-6 lg:px-[100px] py-[120px]">
+      <section className="w-full zenith-border-b bg-surface px-6 lg:px-[100px] py-[80px] md:py-[120px]">
         <div className="max-w-[800px] mx-auto space-y-12">
           {notes.length === 0 ? (
             <p className="text-[16px] text-text-secondary italic font-light">No notes published yet.</p>
@@ -49,7 +49,7 @@ export default function NotesPage() {
         </div>
       </section>
 
-      <section className="w-full bg-background px-6 lg:px-[100px] py-[140px] text-center">
+      <section className="w-full bg-background px-6 lg:px-[100px] py-[100px] md:py-[140px] text-center">
         <h2 className="text-[36px] md:text-[48px] font-normal tracking-[-0.03em] mb-[24px] leading-[1.1]">Building with AI?</h2>
         <p className="text-[18px] text-text-secondary mb-[48px] leading-[1.6] font-light max-w-[600px] mx-auto">
           AI tools can build functional products fast, but they often miss critical UX structure. Get our free checklist to spot the common mistakes.

@@ -70,7 +70,7 @@ export function HeroSection() {
             <span className="zenith-micro tracking-widest text-text-primary">DIGITAL VITAMINS</span>
           </div>
           
-          <h1 className="hero-elem text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px] max-w-[800px]">
+          <h1 className="hero-elem text-[42px] sm:text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px] max-w-[800px]">
             Focused UX care for digital products.
           </h1>
           

@@ -62,14 +62,14 @@ export function ServicesBento() {
   }, []);
 
   return (
-    <section className="w-full zenith-border-b px-6 lg:px-[100px] pt-[120px] pb-[120px] bg-background relative overflow-hidden" ref={containerRef}>
+    <section className="w-full zenith-border-b px-6 lg:px-[100px] pt-[80px] md:pt-[120px] pb-[80px] md:pb-[120px] bg-background relative overflow-hidden" ref={containerRef}>
       <div className="flex items-center gap-4 mb-8">
         <div className="w-6 h-px bg-text-primary"></div>
         <span className="zenith-micro tracking-widest text-text-secondary">SERVICES</span>
       </div>
 
       <div className="mb-[80px] max-w-[800px]">
-        <h2 className="text-[40px] md:text-[56px] font-normal tracking-[-0.03em] mb-[16px] text-text-primary leading-[1.1]">
+        <h2 className="text-[32px] sm:text-[40px] md:text-[56px] font-normal tracking-[-0.03em] mb-[16px] text-text-primary leading-[1.1]">
           Targeted interventions to solve specific product friction.
         </h2>
       </div>

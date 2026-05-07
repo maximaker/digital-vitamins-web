@@ -6,13 +6,13 @@ import { ArrowRight } from "@phosphor-icons/react";
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
-      <section className="w-full zenith-border-b bg-background px-6 lg:px-[100px] pt-[120px] pb-[80px]">
+      <section className="w-full zenith-border-b bg-background px-6 lg:px-[100px] pt-[80px] md:pt-[120px] pb-[60px] md:pb-[80px]">
         <div className="flex items-center gap-4 mb-16">
           <div className="w-6 h-px bg-primary"></div>
           <span className="zenith-micro tracking-widest">ABOUT</span>
         </div>
         <div className="max-w-[800px]">
-          <h1 className="text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
+          <h1 className="text-[42px] sm:text-[56px] md:text-[88px] font-normal tracking-[-0.04em] text-text-primary leading-[1] mb-[32px]">
             A belief in clarity over decoration.
           </h1>
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px]">
@@ -21,7 +21,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="w-full zenith-border-b bg-surface px-6 lg:px-[100px] py-[120px]">
+      <section className="w-full zenith-border-b bg-surface px-6 lg:px-[100px] py-[80px] md:py-[120px]">
         <div className="max-w-[800px] mx-auto">
           <div className="bg-background p-12 border border-border mb-12 shadow-sm">
             <div className="flex items-center gap-4 mb-8">
@@ -53,7 +53,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="w-full relative overflow-hidden text-white py-[140px] text-center">
+      <section className="w-full relative overflow-hidden text-white py-[100px] md:py-[140px] text-center">
         {/* Background Gradient top half for continuous effect */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#8C7362] to-[#705849]"></div>
         

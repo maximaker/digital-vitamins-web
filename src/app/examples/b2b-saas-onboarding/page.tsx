@@ -13,7 +13,7 @@ export default function CaseStudyPage() {
         </div>
         <div className="max-w-[800px]">
           <p className="zenith-micro text-text-secondary mb-6">CASE STUDY: ONBOARDING OPTIMIZATION</p>
-          <h1 className="text-[48px] md:text-[72px] font-normal tracking-[-0.04em] text-text-primary leading-[1.05] mb-[32px]">
+          <h1 className="text-[42px] sm:text-[56px] md:text-[72px] font-normal tracking-[-0.04em] text-text-primary leading-[1.05] mb-[32px]">
             B2B SaaS Onboarding Flow
           </h1>
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px]">
