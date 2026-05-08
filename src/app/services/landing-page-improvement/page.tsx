@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
+import { ArrowRight } from '@phosphor-icons/react';
+import { WaitlistOverlay } from '@/components/WaitlistOverlay';
 
 export default function LandingPageImprovementPage() {
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+
   return (
     <div className="flex flex-col">
+      <WaitlistOverlay isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
+
       <section className="w-full zenith-border-b bg-background px-6 lg:px-[100px] pt-[120px] pb-[80px]">
         <div className="flex items-center gap-4 mb-16">
           <div className="w-6 h-px bg-primary"></div>
@@ -22,9 +30,9 @@ export default function LandingPageImprovementPage() {
           <p className="text-[18px] md:text-[22px] text-text-secondary font-light leading-[1.6] max-w-[600px] mb-12">
             A practical improvement of your landing page structure, messaging, and flow so visitors understand the offer and know what to do next.
           </p>
-          <Link href="/contact?service=landing-page-waitlist" className="zenith-btn">
+          <button onClick={() => setIsWaitlistOpen(true)} className="zenith-btn">
             JOIN THE INTEREST LIST <ArrowRight weight="bold" />
-          </Link>
+          </button>
         </div>
       </section>
 
@@ -80,9 +88,9 @@ export default function LandingPageImprovementPage() {
             This service will launch soon. Join the interest list to secure early access and special launch pricing.
           </p>
           <div className="flex justify-center">
-            <Link href="/contact?service=landing-page-waitlist" className="bg-white text-[#5C4538] hover:bg-white/90 transition-colors px-8 py-4 text-[13px] font-medium tracking-widest uppercase flex items-center gap-3">
+            <button onClick={() => setIsWaitlistOpen(true)} className="bg-white text-[#5C4538] hover:bg-white/90 transition-colors px-8 py-4 text-[13px] font-medium tracking-widest uppercase flex items-center gap-3">
               JOIN THE INTEREST LIST <ArrowRight weight="bold" />
-            </Link>
+            </button>
           </div>
         </div>
       </section>
