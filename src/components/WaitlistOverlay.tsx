@@ -70,7 +70,7 @@ export function WaitlistOverlay({ isOpen, onClose }: WaitlistOverlayProps) {
       >
         <div className="flex items-center justify-between p-6 border-b border-border bg-background">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 bg-primary/80 rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-primary/80 rounded-full animate-pulse" style={{ animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)', animationDuration: '2s' }}></div>
             <span className="zenith-micro text-text-primary tracking-widest">INTEREST LIST</span>
           </div>
           <button 
@@ -111,7 +111,7 @@ export function WaitlistOverlay({ isOpen, onClose }: WaitlistOverlayProps) {
                     type="text" 
                     id="name" 
                     required
-                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all rounded-none"
                     placeholder="Your full name"
                   />
                 </div>
@@ -121,7 +121,7 @@ export function WaitlistOverlay({ isOpen, onClose }: WaitlistOverlayProps) {
                     type="email" 
                     id="email" 
                     required
-                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all rounded-none"
                     placeholder="you@company.com"
                   />
                 </div>
@@ -130,7 +130,7 @@ export function WaitlistOverlay({ isOpen, onClose }: WaitlistOverlayProps) {
                   <input 
                     type="url" 
                     id="url" 
-                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all rounded-none"
                     placeholder="https://"
                   />
                 </div>
@@ -139,7 +139,7 @@ export function WaitlistOverlay({ isOpen, onClose }: WaitlistOverlayProps) {
                   <textarea 
                     id="goal" 
                     rows={4}
-                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary transition-colors resize-none"
+                    className="w-full bg-surface border border-border px-4 py-3 text-[15px] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none rounded-none"
                     placeholder="e.g. Sign up for a trial, book a demo, etc."
                   ></textarea>
                 </div>

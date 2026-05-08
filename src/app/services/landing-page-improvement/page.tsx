@@ -36,9 +36,9 @@ export default function LandingPageImprovementPage() {
         </div>
       </section>
 
-      <section className="w-full zenith-border-b bg-surface px-6 lg:px-[100px] py-[120px]">
-        <div className="max-w-[1000px] mx-auto">
-          <h2 className="text-[32px] md:text-[40px] font-normal tracking-[-0.02em] mb-[32px] text-text-primary">
+      <section className="w-full bg-surface px-6 lg:px-[100px] py-[120px]">
+        <div className="max-w-[1200px]">
+          <h2 className="text-[32px] md:text-[42px] font-normal tracking-[-0.02em] text-text-primary mb-6 leading-[1.2]">
             A landing page can look fine and still fail to explain the offer.
           </h2>
           <div className="space-y-[24px] text-[16px] text-text-secondary font-light leading-[1.8] mb-20 max-w-[800px]">
@@ -46,9 +46,10 @@ export default function LandingPageImprovementPage() {
             <p>This service helps pages answer the right questions in the right order, moving beyond visual polish to actual message clarity and conversion logic.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-[40px] md:gap-[80px] mb-20">
-            <div className="bg-background p-10 border border-border shadow-sm">
-              <h3 className="zenith-micro mb-8 text-primary">WHAT GETS IMPROVED</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-[120px] mt-[80px]">
+            {/* Left Card */}
+            <div className="bg-background border border-border/60 p-10 md:p-14">
+              <h3 className="zenith-micro text-primary mb-12">WHAT GETS IMPROVED</h3>
               <ul className="space-y-4 text-[16px] text-text-secondary font-light">
                 <li className="flex gap-3"><span className="text-primary">→</span> Hero message & Offer clarity</li>
                 <li className="flex gap-3"><span className="text-primary">→</span> Page structure & Section order</li>
@@ -57,8 +58,9 @@ export default function LandingPageImprovementPage() {
                 <li className="flex gap-3"><span className="text-primary">→</span> Visual hierarchy & Copy clarity</li>
               </ul>
             </div>
-            <div className="bg-background p-10 border border-border shadow-sm">
-              <h3 className="zenith-micro mb-8 text-primary">WHAT YOU RECEIVE</h3>
+            {/* Right Card */}
+            <div className="bg-background border border-border/60 p-10 md:p-14">
+              <h3 className="zenith-micro text-primary mb-12">WHAT YOU RECEIVE</h3>
               <ul className="space-y-4 text-[16px] text-text-secondary font-light">
                 <li className="flex gap-3"><span className="text-text-primary">✓</span> Review and strategy notes</li>
                 <li className="flex gap-3"><span className="text-text-primary">✓</span> Improved page structure</li>
@@ -69,12 +71,21 @@ export default function LandingPageImprovementPage() {
             </div>
           </div>
 
-          <div className="bg-background p-12 border border-border mb-20 shadow-sm">
-            <h3 className="text-[24px] font-normal mb-8 tracking-[-0.01em] text-text-primary">Best For</h3>
-            <ul className="space-y-6 text-[16px] text-text-secondary font-light">
-              <li className="flex gap-4 border-b border-border pb-6"><span className="font-medium text-primary zenith-micro pt-1">01</span> The offer exists, but the page does not explain it clearly</li>
-              <li className="flex gap-4 border-b border-border pb-6"><span className="font-medium text-primary zenith-micro pt-1">02</span> The page gets traffic, but visitors hesitate or drop off</li>
-              <li className="flex gap-4"><span className="font-medium text-primary zenith-micro pt-1">03</span> You need clearer structure before investing in more marketing</li>
+          <div className="bg-background border border-border/60 p-10 md:p-14">
+            <h2 className="text-[32px] font-normal tracking-[-0.02em] text-text-primary mb-12">Best For</h2>
+            <ul className="space-y-0">
+              <li className="flex gap-8 items-start py-8 border-b border-border/60">
+                <span className="zenith-micro text-primary mt-1 font-mono">01</span>
+                <span className="text-[18px] text-text-secondary font-light">The offer exists, but the page does not explain it clearly</span>
+              </li>
+              <li className="flex gap-8 items-start py-8 border-b border-border/60">
+                <span className="zenith-micro text-primary mt-1 font-mono">02</span>
+                <span className="text-[18px] text-text-secondary font-light">The page gets traffic, but visitors hesitate or drop off</span>
+              </li>
+              <li className="flex gap-8 items-start py-8">
+                <span className="zenith-micro text-primary mt-1 font-mono">03</span>
+                <span className="text-[18px] text-text-secondary font-light">You need clearer structure before investing in more marketing</span>
+              </li>
             </ul>
           </div>
         </div>
